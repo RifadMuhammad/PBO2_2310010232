@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="03124df8-c48e-4eca-b56e-6cb1b1f0443d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM produk;]]>
+	</queryString>
+	<field name="id_int" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_produk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="deskripsi" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kategori" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="berat" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="stok" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="gambar_produk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tambah" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="edit" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hapus" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tampil" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="31" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="2" width="42" height="20" uuid="7b7b1503-7fdb-419e-a0eb-9b43de3747bf"/>
+				<text><![CDATA[id_int]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="2" width="69" height="20" uuid="8170dce2-f43d-4082-b1c9-6dab90842e3c"/>
+				<text><![CDATA[nama_produk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="0" width="53" height="20" uuid="e32373af-4239-4513-a61c-d86d7f3fc569"/>
+				<text><![CDATA[deskripsi]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="164" y="2" width="59" height="20" uuid="74cee024-a193-48d2-9ca0-182d671d5d67"/>
+				<text><![CDATA[kategori]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="223" y="0" width="56" height="20" uuid="c0e197e3-7f19-4c4c-81ba-c1fb2f8dab98"/>
+				<text><![CDATA[harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="279" y="2" width="57" height="20" uuid="3bcedbb2-e277-4cb3-8474-aa91e38671d3"/>
+				<text><![CDATA[berat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="347" y="2" width="42" height="20" uuid="c170fa0f-0248-4e94-a5d5-bc6d129807c3"/>
+				<text><![CDATA[stok]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="33" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="42" height="20" uuid="0aee5dc7-daef-4bfb-9fbc-9984c29e6fc2"/>
+				<textFieldExpression><![CDATA[$F{id_int}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="53" height="20" uuid="e8f32bb4-379b-48f5-b4d0-b6785d3ffd16"/>
+				<textFieldExpression><![CDATA[$F{deskripsi}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="42" y="0" width="69" height="20" uuid="4eb18afa-312a-4527-87c8-e0b3dacbf2e6"/>
+				<textFieldExpression><![CDATA[$F{nama_produk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="164" y="0" width="59" height="20" uuid="c70761cb-1b9f-4a9d-bdfa-6841eba84567"/>
+				<textFieldExpression><![CDATA[$F{kategori}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="223" y="0" width="56" height="20" uuid="63a880ee-3564-4b98-89bc-b0375a1e1f32"/>
+				<textFieldExpression><![CDATA[$F{harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="279" y="0" width="57" height="20" uuid="8c702b04-3848-47cc-b069-3058b567fac7"/>
+				<textFieldExpression><![CDATA[$F{berat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="347" y="2" width="42" height="20" uuid="ad6ce2c7-0118-4c59-9ae6-f9b92f0360a5"/>
+				<textFieldExpression><![CDATA[$F{stok}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

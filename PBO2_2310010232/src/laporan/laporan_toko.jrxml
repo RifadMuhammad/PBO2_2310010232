@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="bd283e92-b2df-4439-bcde-ef1c12330bdf">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM toko;]]>
+	</queryString>
+	<field name="id_toko_int" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_toko" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="alamat_toko" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="no_hp_toko" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="rating" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="produk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_daftar_user" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tambah" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="edit" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hapus" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tampil" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="31" splitType="Stretch">
+			<staticText>
+				<reportElement x="13" y="2" width="100" height="20" uuid="5ce9be7a-3f74-410c-bd3a-a47d8d38d074"/>
+				<text><![CDATA[id_toko_int]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="113" y="2" width="100" height="20" uuid="fa7b9ed0-5513-4c87-8e15-db02cb174acd"/>
+				<text><![CDATA[nama_toko]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="213" y="2" width="100" height="20" uuid="97bed1fe-2519-4ae0-9cf5-f7cc6ae65a76"/>
+				<text><![CDATA[alamat_toko]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="313" y="2" width="73" height="20" uuid="aa118809-9545-4a77-9e19-ee5e2081cd26"/>
+				<text><![CDATA[no_hp_toko]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="386" y="2" width="47" height="20" uuid="ae5d1ae2-8b84-4d5e-a084-2943f7d507c5"/>
+				<text><![CDATA[rating]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="433" y="2" width="50" height="20" uuid="7b72bf14-e374-4a2a-9fa0-d70c59c0babd"/>
+				<text><![CDATA[produk]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="27" splitType="Stretch">
+			<textField>
+				<reportElement x="13" y="0" width="100" height="20" uuid="ef064199-ac53-4550-b541-21d4ed1ed5b9"/>
+				<textFieldExpression><![CDATA[$F{id_toko_int}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="113" y="7" width="100" height="20" uuid="a887b6d2-cf4d-4c39-98dc-21a4f5a60b51"/>
+				<textFieldExpression><![CDATA[$F{nama_toko}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="213" y="7" width="100" height="20" uuid="d3a1df88-0309-4778-9fb6-338d1a9b50ab"/>
+				<textFieldExpression><![CDATA[$F{alamat_toko}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="313" y="7" width="73" height="20" uuid="a0e89c2f-bd29-4a59-9ac6-61ae5f9abeb0"/>
+				<textFieldExpression><![CDATA[$F{no_hp_toko}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="386" y="7" width="47" height="20" uuid="51f2d0cd-137c-4431-9f12-4468fe494199"/>
+				<textFieldExpression><![CDATA[$F{rating}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="433" y="7" width="50" height="20" uuid="d347661f-a1a2-47f9-b753-96a74dbcd670"/>
+				<textFieldExpression><![CDATA[$F{produk}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

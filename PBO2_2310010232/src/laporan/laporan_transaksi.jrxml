@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ba6d8ee4-b6d8-4269-8157-02759040e8fb">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT * FROM transaksi;]]>
+	</queryString>
+	<field name="id_int" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tgl_beli" class="java.sql.Date">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_user" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_toko" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nama_produk" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="harga" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jlh_produk" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="total_harga" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="kode_kurir" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="ongkos_kirim" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="jlh_total" class="java.math.BigDecimal">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tambah" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="edit" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="hapus" class="java.sql.Timestamp">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="tampil" class="java.lang.Boolean">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="26" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="47" height="20" uuid="12bf3922-dfe8-4bc1-a885-22d408a1353c"/>
+				<text><![CDATA[id_int]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="0" width="53" height="20" uuid="18df8bbb-474b-400a-860c-a0b50c56c1d1"/>
+				<text><![CDATA[tgl_beli]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="2" width="74" height="20" uuid="f3704022-19a6-43ac-87ef-789ffe2414b2"/>
+				<text><![CDATA[nama_user]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="174" y="2" width="76" height="20" uuid="76ac6ccd-bb6b-4a21-8a03-4e6a89c645b1"/>
+				<text><![CDATA[nama_toko]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="250" y="0" width="83" height="20" uuid="4bb74f8f-cf19-465a-a56d-d710352d9f34"/>
+				<text><![CDATA[nama_produk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="333" y="2" width="44" height="20" uuid="c9fbd3ac-a1c5-41e3-8445-670d4ab14bad"/>
+				<text><![CDATA[harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="377" y="2" width="66" height="20" uuid="3942e0a4-ec4e-4c57-a11c-60b2555682df"/>
+				<text><![CDATA[jlh_produk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="443" y="2" width="71" height="20" uuid="86b11bd2-1004-4ce6-9976-b3ca8aa2028c"/>
+				<text><![CDATA[total_harga]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="514" y="2" width="41" height="20" uuid="ee1e39b7-e5bc-4537-8166-54b119c9ccb0"/>
+				<text><![CDATA[kode_kurir]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="30" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="8" width="47" height="20" uuid="f6c74405-bbde-4d98-bea1-3b917405cf85"/>
+				<textFieldExpression><![CDATA[$F{id_int}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="47" y="8" width="53" height="20" uuid="5d953f35-b957-4be7-ba2b-4bdd7b4f0eb9"/>
+				<textFieldExpression><![CDATA[$F{tgl_beli}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="100" y="10" width="74" height="20" uuid="d7e47cc2-1679-4c34-8bd5-a7271d2d7d7a"/>
+				<textFieldExpression><![CDATA[$F{nama_user}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="174" y="10" width="76" height="20" uuid="7a09ac20-f5bb-495c-b971-4f6075fb9979"/>
+				<textFieldExpression><![CDATA[$F{nama_toko}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="250" y="8" width="83" height="20" uuid="727238e7-1b36-4e9f-8770-d6fe6084f206"/>
+				<textFieldExpression><![CDATA[$F{nama_produk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="333" y="10" width="44" height="20" uuid="111f8ba0-4a01-4959-8b53-7a3524eed1f5"/>
+				<textFieldExpression><![CDATA[$F{harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="377" y="10" width="66" height="20" uuid="151865ea-21d0-4b26-9d1f-62892518c181"/>
+				<textFieldExpression><![CDATA[$F{jlh_produk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="443" y="10" width="71" height="20" uuid="6604e60e-0597-4569-b3b1-d64511acc76f"/>
+				<textFieldExpression><![CDATA[$F{total_harga}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="514" y="10" width="41" height="20" uuid="03edeb06-c139-44b1-9511-d6342cc1da02"/>
+				<textFieldExpression><![CDATA[$F{kode_kurir}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
